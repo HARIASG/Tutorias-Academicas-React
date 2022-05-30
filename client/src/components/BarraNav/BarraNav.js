@@ -16,9 +16,9 @@ const BarraNav = ({user,setUser}) => {
         {(!user || !user.isLogin) && <img className='Logo-Nav' src={logo} alt="logo"/>}
         <div className="contenedor-action">
             {(!user || !user.isLogin) && <NavLink to="/inicio">Inicio</NavLink>}
-            {(!user || !user.isLogin) && <NavLink to="/servicios">Servicios</NavLink>}
+            {/* {(!user || !user.isLogin) && <NavLink to="/servicios">Servicios</NavLink>}
             {(!user || !user.isLogin) && <NavLink to="/testimonios">Testimonios</NavLink>}
-            {(!user || !user.isLogin) && <NavLink to="/contactanos">Contactanos</NavLink>}
+            {(!user || !user.isLogin) && <NavLink to="/contactanos">Contactanos</NavLink>} */}
             {(!user || !user.isLogin) && <div className="btn-iniciar-sesion "> <NavLink to="/login">Iniciar Sesion</NavLink></div>}
             {user && user.isLogin && 
             <div onMouseLeave={()=>setVisible(false)} onMouseEnter={()=>setVisible(true)} className="content-user-sesion">

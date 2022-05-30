@@ -89,6 +89,7 @@ router.route("/user/tutoresXmateria").post((reque,respon)=>{
     })
 })
 
+
 router.route("/tutoria/reservarTutoria").post((reque,respon)=>{
     dbTutoria.reservarTutoria(reque.body)
     .then(res=>{
@@ -114,6 +115,13 @@ router.route("/tutoria/tutoriasReservadas").post((reque,respon)=>{
     })
 })
 
+router.route("/tutoria/cancelarTutoria").post((reque,respon)=>{
+    let id_tutoria = reque.body.id;
+    dbTutoria.cancelarTutoria(id_tutoria)
+    .then(res=>{
+        respon.json(res);
+    })
+})
 router.route("/user/estudiantesAsig").post((reque,respon)=>{
     let id_tutor = reque.body.id_tutor;
     dbUser.estudiantesAsig(id_tutor)

@@ -2,10 +2,29 @@ import React,{useEffect,useState} from 'react'
 import {Link} from "react-router-dom"
 import "./MisTutorias.css";
 import config from "../config";
+import TarjetaMensaje from "../TarjetaMensaje/TarjetaMensaje"
 
 const MisTutorias = ({user}) => {
-    
+
     const [listTutorias,setListTutorias] = useState([]);
+    const [respuesta,SetRespuesta] = useState({error:false,visible:false,mensaje:""});
+
+    const handleCancelar = (id)=>{
+      if(window.confirm("Seguro desea cancelar esta turoria")){
+        fetch(`${config.host}/tutoria/cancelarTutoria`,{
+            method:"POST",
+            body:JSON.stringify({id:id}),
+            headers:{
+                "Content-Type":"application/json"
+            }
+        })
+        .then(res=>{
+          let newListaTutorias = listTutorias.filter(el=>el.id != id);
+          setListTutorias(newListaTutorias);
+          SetRespuesta({error:false,visible:true,mensaje:"Tutoria cancelada con Exito."})
+        })
+      }
+    }
 
     useEffect(()=>{
         fetch(`${config.host}/tutoria/consultarTutorias`,{
@@ -20,6 +39,7 @@ const MisTutorias = ({user}) => {
     },[])
   return (
     <div>
+      {respuesta.visible && <TarjetaMensaje SetRespuesta={SetRespuesta} respuesta={respuesta}/>}
       <div className='cont-title-action'>
           <h2>Mis Tutorias</h2>
           <p>Recuerda ser muy puntual a la hora de la tutoria</p>
@@ -38,11 +58,10 @@ const MisTutorias = ({user}) => {
               </div>
               <div className='cont-btn-action'>
                 <button>Ver calendario</button>
-                <button>Cancelar Tutoria</button>
+                <button onClick={()=>handleCancelar(el.id)}>Cancelar Tutoria</button>
               </div>
           </div>
         </div>)}
-      
       </div>
     </div>
   )

@@ -45,9 +45,23 @@ const consultarTutorias = async (datos)=>{
     }
 }
 
+const cancelarTutoria = async (id)=>{
+    try{
+
+        let pool = await sql.connect(config);
+        let tutorias = await pool.request().query("DELETE FROM TutoriasReservadas where id = "+id)
+        console.log(tutorias.recordsets)
+        return tutorias.recordset;
+    }
+    catch(error){
+        return error
+    }
+}
+
 
 module.exports = {
    reservarTutoria,
    tutoriasReservadas,
-   consultarTutorias
+   consultarTutorias,
+   cancelarTutoria
 }
