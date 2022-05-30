@@ -1,0 +1,92 @@
+table{
+    border-spacing: 0.2px;
+}
+
+table td,table th{
+    border: 0.1px solid rgb(187, 187, 187);
+    text-align: center;
+    position: relative;
+}
+
+
+table button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    width: 100px;
+    height: 25px;
+    border-radius: 0.4em;
+    background-color: rgba(45, 102, 224, 0.9);
+}
+
+
+table button:hover{
+    background-color: rgba(45, 102, 224, 0.8);
+    cursor: pointer;
+    box-shadow: grey 0px 1px 2px 2px;
+}
+.selectFecha{
+    background-color: rgba(45, 102, 224);
+    color: white;
+    font-size: 13px;
+}
+
+.reservada{
+    background-color: red;
+    color: white;
+    font-size: 13px;
+}
+
+.seleccionableF:hover{
+    cursor: pointer;
+}
+
+.cont-reservarT{
+    position: absolute;
+    background-color: rgb(163, 163, 163);
+    width: 160px;
+    height: 150px;
+    bottom: 110%;
+    display: none;
+    right: -38px;
+    border-radius: 10px;
+    z-index: 1000;
+    font-size: 14px;
+    color: black;
+}
+.cont-reservarT::before{
+    content: "";
+    position: absolute;
+    background-color: rgb(163, 163, 163);
+    width: 30px;
+    height: 30px;
+    bottom: -8px;
+    right: 65px;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+.visible-reserva{
+    display: block;
+}
+
+.visible-reserva>span{
+    position: absolute;
+    right: 5px;
+    top: 2px;
+}
+
+.visible-reserva>span:hover{
+    color: red;
+}
+
+.visible-reserva>p{
+    margin: 0;
+}
+
+.visible-reserva>button{
+    height: 25px;
+    color: white;
+    font-weight: bold;
+    width: 130px;
+}

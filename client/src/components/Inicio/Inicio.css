@@ -1,0 +1,160 @@
+/*TITULO Y REGISTROS*/
+.cont-title{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    background: url("../../img/hero-bg.jpg") ;
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+}
+
+.cont-inter,.cont-inter2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.cont-title>.cont-inter{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.children-1{
+    position: relative;
+    z-index: 10;
+}
+.cont-title>.children-1{
+    align-self: center;
+}
+
+.cont-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(134, 134, 134);
+}
+.cont-info>h1{
+    margin: 0;
+    color:#03C4EB;
+}
+.cont-regitrar{
+    width: 25em;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3em;
+}
+.cont-regitrar>a{
+    background: white;
+    padding: 0.7em 1.3em;
+    border-radius: 0.5em;
+    color: #03C4EB;
+    transition: background 0.7s,color 0.4s;
+    text-decoration: none;
+}
+.cont-regitrar>a:hover{
+    background-color: #03C4EB;
+    color: white;
+    cursor: pointer;
+}
+
+.cont-title>.footer{
+    background-color: rgb(129, 127, 127);
+    text-align: center;
+    position: absolute;
+    color: white;
+    width: 100%;
+    bottom: 0;
+}
+
+
+/*LO QUE HACEMOS*/
+.cont-hacemos{
+    position: relative;
+    width: 100%;
+    min-height: 700px;
+    height: auto;
+    background-image: url("../../img/teacher-presenting-on-board.jpg");
+    background-position: top center;
+    background-attachment: fixed;
+    background-size: cover ;
+}
+
+
+.cont-hacemos>.children-1>.cont-inter{
+    height: 100%;
+    background-color: rgba(224, 237, 243,0.93);
+}
+.cont-hacemos .cont-inter2{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(67, 133, 255, 0.596);
+}
+.cont-hacemos h1{
+    margin: 0;
+    padding-top: 1em;
+}
+
+.cont-hacemos>.children-1,.cont-hacemos>.children-2{
+    position: relative;
+    color: #03C4EB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 50%;
+}
+
+.linear{
+    margin-top: 20px;
+    width: 40px;
+    height: 3px;
+    background-color: #03C4EB;
+}
+
+.cont-hacemos>.children-1>div:nth-child(2){
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor-tarjetas{
+    z-index: 10;
+    width: 90%;
+    min-height: 20em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cont-hacemos .children-2>div:last-child{
+    min-height: 300px;
+    z-index: 10;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    align-items: center;
+}
+
+.cont-hacemos .children-2>div:last-child>div{
+    width: 700px;
+    text-align: justify;
+}
+.cont-hacemos .children-2>div:last-child>button{
+    background-color: white;
+    color: #03C4EB;
+    border: none;
+    border-radius: 5px;
+    height: 23px;
+    font-size: 15px;
+}
+
+.cont-hacemos .children-2>div:last-child>button:hover{
+    cursor: pointer;
+}

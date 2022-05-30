@@ -1,0 +1,137 @@
+.contenedor-inicio-login{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 100px 1fr 1fr ;
+    grid-template-columns: 21em 1fr 1fr 1fr;
+}
+
+.contenedor-menu{
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+}
+.conten-info-perfil{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50%;
+    width: 21em;
+    background-image: url("../../img/happy-male-and-female-university-students-sitting-on-staircase-looking-to-camera.jpg");
+    background-attachment: fixed;
+    background-size: contain;
+    color: white;
+}
+
+.conten-info-perfil h2{
+    font-size: 20px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.contenet-img-perfil{
+    position: relative;
+}
+
+.contenet-img-perfil img{
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 80px;
+    border: 4px solid white;
+    margin-top: 20px;
+}
+
+.conten-info-perfil button{
+    background-color: white;
+    color: rgb(41, 154, 209);
+    border: none;
+    width: 100px;
+    height: 24px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.conten-info-perfil button:hover{
+    cursor: pointer;
+}
+
+.conten-info-perfil i {
+    color: white;
+}
+
+.contenet-img-perfil i,
+.conten-info-perfil>i{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 25px;
+    height: 24px;
+    background-color: white;
+    color: rgb(41, 154, 209);
+    font-size: 16px;
+    text-align: center;
+}
+
+.contenet-img-perfil i{
+    bottom: -5px;
+    left: 39%;
+}
+
+.conten-info-perfil>i{
+    bottom: 5px;
+    right: 5px;
+}
+
+.cont-actions{
+    height: 50%;
+    width: 21em;
+    background-color: rgb(41, 154, 209);
+}
+
+.cont-actions{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cont-actions a{
+    display: inline-block;
+    width: 100%;
+    height: 25px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.contenedor-body{
+    background-color: rgb(224,237,243);
+    height: auto;
+    min-height: 100%;
+    overflow-y: scroll;
+}
+
+.Contenedor-BarraNav{
+    position: relative;
+    grid-column: 2 / -1;
+}
+
+.contenedor-body{
+    grid-column: 2 / -1;
+    grid-row: 2 / -1;
+}
+
+.active-action{
+    background-color: white;
+    color: rgb(41, 154, 209) !important;
+}

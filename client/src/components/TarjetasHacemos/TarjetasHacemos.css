@@ -1,0 +1,40 @@
+.contenedor{
+    background-color: white;
+    border-radius: 1.5em;
+    width: 15em;
+    height: 16em;
+    margin: 1em 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    transition: color 0.6s, background 0.6s;
+}
+
+.contenedor img{
+
+}
+
+.contenedor h2{
+    margin: 5px 30px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.contenedor p{
+    text-align: justify;
+    margin: 10px 30px;
+    color: rgb(80, 80, 80);
+    font-size: 15px;
+    transition: color 0.6s;
+}
+
+.contenedor:hover{
+    background-color: #03C4EB;
+    color: white;
+    cursor: pointer;
+}
+
+.contenedor:hover > p{
+    color: white;
+}

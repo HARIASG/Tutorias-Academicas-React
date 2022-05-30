@@ -1,0 +1,41 @@
+.cont-tarjeta-estudiante{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+}
+
+.cont-tarjeta-estudiante>div{
+    width: 400px;
+    height: 140px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: grey 0px 3px 4px;
+    margin-top: 15px;
+}
+
+.cont-tarjeta-estudiante img{
+    width: 110px;
+    height: 90px;
+    object-fit: cover;
+    margin-left: 20px;
+    border-radius: 50%;
+    border: 4px solid rgb(41, 154, 209);
+}
+
+.cont-tarjeta-estudiante>div>div{
+    margin-left: 20px;
+    width: 320px;
+}
+
+.cont-tarjeta-estudiante>div>div>h1{
+    font-size: 19px;
+    color: gray;
+}
+
+.cont-tarjeta-estudiante>div>div>h2{
+    font-size: 19px;
+    color:  rgb(41, 154, 209);
+}

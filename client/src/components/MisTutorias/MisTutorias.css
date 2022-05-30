@@ -1,0 +1,103 @@
+.contenedor-tutorias{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
+
+.cont-tarjeta-tutoria{
+    min-width: 450px;
+    width: auto;
+    height: 170px;
+    background-color: white;
+    margin: 20px 0px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: grey 0px 3px 3px;
+}
+
+.cont-tarjeta-tutoria img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-left: 20px;
+    border-radius: 50%;
+    border: 3px solid  rgb(41, 154, 209);;
+}
+
+.cont-tarjeta-tutoria>div{
+    min-width: 380px;
+    width: auto;
+    margin-left: 20px;
+    font-size: 13px;
+    display: flex;
+}
+
+.cont-tarjeta-tutoria>div>div>h3,
+.cont-tarjeta-tutoria>div>div>h2,
+.cont-tarjeta-tutoria>div>div>p{
+    margin: 0%;
+}
+
+.cont-tarjeta-tutoria>div>div>h2{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.cont-tarjeta-tutoria>div>div>h3{
+    font-size: 17px;
+    color: rgb(41, 154, 209);
+    margin-bottom: 5px;
+}
+
+
+.cont-tarjeta-tutoria>div>div>p{
+    max-width: 330px;
+    margin-bottom: 5px;
+}
+
+.cont-tarjeta-tutoria>div>div>a{
+    display: inline-block;
+    max-width: 330px;
+}
+
+.cont-tarjeta-tutoria>div>div>div:last-child{
+    margin-top: 15px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cont-tarjeta-tutoria span{
+    color:rgb(41, 154, 209);
+}
+
+.cont-tarjeta-tutoria i{
+    font-size: 15px;
+    margin-right: 3px;
+    color:rgb(41, 154, 209);
+}
+
+.cont-tarjeta-tutoria .cont-btn-action{
+    margin-right: 20px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+.cont-btn-action button{
+    background-color: rgb(41, 154, 209);
+    border: none;
+    width: 130px;
+    height: 30px;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+}
+
+.cont-btn-action button:hover{
+    cursor: pointer;
+    box-shadow: grey 0px 3px 3px;
+}
