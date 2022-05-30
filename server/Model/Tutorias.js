@@ -50,7 +50,6 @@ const cancelarTutoria = async (id)=>{
 
         let pool = await sql.connect(config);
         let tutorias = await pool.request().query("DELETE FROM TutoriasReservadas where id = "+id)
-        console.log(tutorias.recordsets)
         return tutorias.recordset;
     }
     catch(error){
