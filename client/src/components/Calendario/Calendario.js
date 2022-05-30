@@ -63,9 +63,9 @@ const Calendario = ({isVisible,setVisible,info,SetInfo,user}) => {
     <div className={'body'+(!isVisible ? " hidden" : "")}>
         <div className={'cont-calendario'}>
             <div className='cont-title-fecha'>
-                <button onClick={handlePrev}><i className="fa-solid fa-backward"></i></button>
+                <button type='button' onClick={handlePrev}><i className="fa-solid fa-backward"></i></button>
                 <h2>{diaIni} {(mesIni == mesFin ?"": `de ${mesIni}`)} {(yearIni == yearFin ?"": `de ${yearIni}`)} - {diaFin} de {mesFin} de {yearFin}</h2>
-                <button onClick={handleNext}><i className="fa-solid fa-forward"></i></button>
+                <button type='button' onClick={handleNext}><i className="fa-solid fa-forward"></i></button>
             </div>
             <DinamicFecha user={user} setVisible={setVisible} info={info} SetInfo={SetInfo} fecha={fecha} action={action}/>
         </div>
